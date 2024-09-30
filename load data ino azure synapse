@@ -1,0 +1,2 @@
+df=spark.read.csv('abfss://data@datalakeml12.dfs.core.windows.net/ActivityLog-01.csv')
+display(df)
