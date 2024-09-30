@@ -1,0 +1,10 @@
+tablepath="/delta/ActivityLog"
+df.write.format("delta").save(tablepath)
+
+
+
+now after that 
+
+
+Alogdf=spark.read.format("delta").load(tablepath)
+display(Alogdf)
