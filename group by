@@ -1,0 +1,5 @@
+from pyspark.sql.functions import col
+filtereddf=df.filter(col('Resourcegroup').isNotNull())
+
+summarydf=filtereddf.groupBy('Resourcegroup').count()
+display(summarydf)
